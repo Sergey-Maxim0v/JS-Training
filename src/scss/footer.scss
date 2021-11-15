@@ -7,11 +7,16 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0 7%;
+    &Home{
+        background-color: $paleYellow;
+        color: $darkBrown;
+    }
     &Text{
-        margin-right: 3%;
+        margin-right: auto;
     }
     &Autor{
         margin-right: 3%;
+        font-weight: 500;
     }
     &LinkGit{
         display: block;
@@ -31,8 +36,8 @@
         border-radius: 25px;
         cursor: pointer;
         background-image: url(../../assets/images/logo-color-gmail.png);
-        background-position: center;
-        background-size: 100%;
+        background-position: 47% center;
+        background-size: auto 120%;
         background-repeat: no-repeat;
     }
 }

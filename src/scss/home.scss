@@ -1,0 +1,59 @@
+.homePage {
+  padding: 7%;
+  color: $darkBrown;
+  background-color: $paleYellow;
+}
+.homeTitle {
+  font-size: $font-size__40;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homeList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &Project {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(EVEN) {
+      background-color: $white;
+    }
+    &:nth-child(ODD) {
+      background-color: #ffffe0;
+    }
+  }
+  &Title {
+    font-size: $font-size__24;
+    padding: 10px 0;
+    font-weight: 500;
+  }
+  &Text {
+    font-family: $font-italic;
+    padding: 5px 10px;
+  }
+  &Code {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  &link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: $darkBrown;
+    color: $paleYellow;
+  }
+}
