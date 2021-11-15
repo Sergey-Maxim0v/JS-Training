@@ -1,0 +1,40 @@
+.footer{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 7%;
+    &Text{
+        margin-right: 3%;
+
+    }
+    &Autor{
+        margin-right: 3%;
+    }
+    &LinkGit{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        margin-right: 2%;
+        background-image: url(../../assets/images/logo-dark-git.png);
+        background-position: center;
+        background-size: 107%;
+        background-repeat: no-repeat;
+    }
+    &Email{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        cursor: pointer;
+        background-image: url(../../assets/images/logo-color-gmail.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
