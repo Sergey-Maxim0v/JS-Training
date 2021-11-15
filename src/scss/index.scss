@@ -1,0 +1,15 @@
+@import "./fonts";
+@import "./vars";
+@import "./mixins";
+@import "./cleancing";
+
+// Pages
+@import "home";
+
+// Blocks
+@import "header";
+
+// Common style
+body {
+    background-color: $asure;
+}
