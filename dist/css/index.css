@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 100;
+  src: url(../../assets/fonts/Inter/Inter-Thin.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 300;
+  src: url(../../assets/fonts/Inter/Inter-Light.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url(../../assets/fonts/Inter/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: url(../../assets/fonts/Inter/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url(../../assets/fonts/Inter/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  src: url(../../assets/fonts/Inter/Inter-Black.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -85,7 +115,6 @@ h6 {
   height: 50px;
   position: fixed;
   bottom: 0;
-  border: 1px red solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,4 +157,7 @@ h6 {
 
 body {
   background-color: #F0FFFF;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
 }
