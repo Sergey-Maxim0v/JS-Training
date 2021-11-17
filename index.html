@@ -21,6 +21,7 @@
         <p class="homeListText">
           Увеличивается размер изображения, при взаимодействии с его укороченной версией.
         </p>
+        <div class="homeListBtn">Открыть JS код</div>
         <p class="homeListCode">
           function slidesPlugin (activeSlide = 0) { <br>
           <br>
@@ -43,35 +44,294 @@
           <br>
           } <br>
         </p>
-        <a href="./project_1/" class="homeListlink" target="_blank">Посмотреть</a>
+        <a href="./project_1/" class="homeListlink" target="_blank">Открыть проект</a>
       </div>
       <div class="homeListProject">
         <h3 class="homeListTitle">Перемещение блока</h3>
         <p class="homeListText">
-
+          Перемещение пользователем объекта сайта визуально, с возможностью добавления фукционала.
         </p>
-        <a href="./project_2/" class="homeListlink" target="_blank">Посмотреть</a>
+        <div class="homeListBtn">Открыть JS код</div>
+        <p class="homeListCode">
+          <br>
+          const item = document.querySelector('.bird') <br>
+          const placeholders = document.querySelectorAll('.placeholder') <br>
+          <br>
+          item.addEventListener ('dragstart', dragstart) <br>
+          item.addEventListener ('dragend', dragend) <br>
+          <br>
+          for (const placeholder of placeholders){ <br>
+          placeholder.addEventListener('dragover', dragover) <br>
+          placeholder.addEventListener('dragenter', dragenter) <br>
+          placeholder.addEventListener('dragleave', dragleave) <br>
+          placeholder.addEventListener('drop', dragdrop) <br>
+          } <br>
+          <br>
+          function dragstart(event){ <br>
+          event.target.classList.add('hold') <br>
+          setTimeout(() => event.target.classList.add('hide'), 0) <br>
+          } <br>
+          <br>
+          function dragend (event) { <br>
+          event.target.classList.remove('hold', 'hide') <br>
+          } <br>
+          <br>
+          function dragover(event) { <br>
+          event.preventDefault() <br>
+          } <br>
+          <br>
+          function dragenter(event) { <br>
+          event.target.classList.add('hovered') <br>
+          } <br>
+          <br>
+          function dragleave(event) { <br>
+          event.target.classList.remove('hovered') <br>
+          } <br>
+          <br>
+          function dragdrop(event) { <br>
+          event.target.append(item) <br>
+          event.target.classList.remove('hovered') <br>
+          <br>
+          }
+        </p>
+        <a href="./project_2/" class="homeListlink" target="_blank">Открыть проект</a>
       </div>
       <div class="homeListProject">
         <h3 class="homeListTitle">Динамические объекты</h3>
         <p class="homeListText">
-
+          Создание и удаление HTML объектов с помощью JS.
         </p>
-        <a href="./project_3/" class="homeListlink" target="_blank">Посмотреть</a>
+        <p class="homeListText">
+          Изменение стилей обектов с помощью JS.
+        </p>
+        <p class="homeListText">
+          Функция рандомного выбора цвета.
+        </p>
+        <div class="homeListBtn">Открыть JS код</div>
+        <p class="homeListCode">
+          const board = document.querySelector('#board') <br>
+          const SQUARES_NUMBER = 225 <br>
+          const colors = ['white', 'white', 'black', 'rgb(201, 9, 5)', 'rgb(201, 9, 5)', 'rgb(201, 9, 5)'] <br>
+          <br>
+          for (let i = 0; i &#60; SQUARES_NUMBER; i++) { <br>
+          const square = document.createElement('div') <br>
+          square.classList.add('square') <br>
+          <br>
+          square.addEventListener('mouseover', () => setColor(square)) <br>
+          <br>
+          square.addEventListener('mouseleave', () => removeColor(square)) <br>
+          <br>
+          board.append(square) <br>
+          } <br>
+          <br>
+          function setColor(element) { <br>
+          const color = getRandomColor() <br>
+          element.style.backgroundColor = color <br>
+          element.style.boxShadow = `0 0 2px ${color}, 0 0 3px ${color}` <br>
+          } <br>
+          <br>
+          function removeColor(element) { <br>
+          element.style.backgroundColor = '#1d1d1d' <br>
+          element.style.boxShadow = `0 0 2px #000` <br>
+          element.style.opacity = `0` <br>
+          <br>
+          } <br>
+          <br>
+          function getRandomColor() { <br>
+          const index = Math.floor(Math.random() * colors.length) <br>
+          return colors[index] <br>
+          } <br>
+        </p>
+        <a href="./project_3/" class="homeListlink" target="_blank">Открыть проект</a>
       </div>
       <div class="homeListProject">
         <h3 class="homeListTitle">Динамичный слайдер</h3>
         <p class="homeListText">
-
+          Создание кнопок, взаимодействие с которыми меняет расположение объектов на странице.
         </p>
-        <a href="./project_4/" class="homeListlink" target="_blank">Посмотреть</a>
+        <div class="homeListBtn">Открыть JS код</div>
+        <p class="homeListCode">
+          const upBtn = document.querySelector('.up-button') <br>
+          const downBtn = document.querySelector('.down-button') <br>
+          const poetry = document.querySelector('.poetry') <br>
+          const pictures = document.querySelector('.pictures') <br>
+          const pictureCount = pictures.querySelectorAll('.picture').length <br>
+          const container = document.querySelector('.container') <br>
+          <br>
+          let activePictureIndex = 0 <br>
+          <br>
+          poetry.style.top = `-${(pictureCount - 1) * 100}vh` <br>
+          <br>
+          upBtn.addEventListener('click', () => { <br>
+          changePicture('up') <br>
+          }) <br>
+          <br>
+          downBtn.addEventListener('click', () => { <br>
+          changePicture('down') <br>
+          }) <br>
+          <br>
+          document.addEventListener('keydown', event => { <br>
+          if (event.key === 'ArrowUp') { <br>
+          changePicture('up') <br>
+          } else if (event.key === 'ArrowDown') { <br>
+          changePicture('down') <br>
+          } <br>
+          }) <br>
+          <br>
+          function changePicture(direction) { <br>
+          if (direction === 'up') { <br>
+          activePictureIndex++ <br>
+          if(activePictureIndex === pictureCount) { <br>
+          activePictureIndex = 0 <br>
+          } <br>
+          } else if (direction === 'down') { <br>
+          activePictureIndex-- <br>
+          if (activePictureIndex &#60; 0){ <br>
+          activePictureIndex = pictureCount - 1 <br>
+          } <br>
+          } <br>
+          <br>
+          const height = container.clientHeight <br>
+          <br>
+          pictures.style.transform = `translateY(-${activePictureIndex * height}px)` <br>
+          <br>
+          poetry.style.transform = `translateY(${activePictureIndex * height}px)` <br>
+          <br>
+          } <br>
+        </p>
+        <a href="./project_4/" class="homeListlink" target="_blank">Открыть проект</a>
       </div>
       <div class="homeListProject">
         <h3 class="homeListTitle">Мини-игра</h3>
         <p class="homeListText">
-
+          Небольшое приложение. Игра-кликкер. <br>
         </p>
-        <a href="./project_5/" class="homeListlink" target="_blank">Посмотреть</a>
+        <p class="homeListText">
+          Создание нескольких визуальных экранов.
+        </p>
+        <p class="homeListText">
+          Результат взаимодействия пользователя с экранами сохраняется.
+        </p>
+        <p class="homeListText">
+          После чего, автоматически осуществляется преход на следующий экран.
+        </p>
+        <p class="homeListText">
+          Создание, изменение объектов HTML и стилей с помощью JS. 
+        </p>
+        <p class="homeListText">
+          Создание таймера, с возможностью выбора значения пользователем.
+        </p>
+        <p class="homeListText">
+          Создание объекта с рандомным расположением в заданных пределах.
+        </p>
+        <div class="homeListBtn">Открыть JS код</div>
+        <p class="homeListCode">
+          const startBtn = document.querySelector("#start"); <br>
+          const screens = document.querySelectorAll(".screen"); <br>
+          const timeList = document.querySelector("#time-list"); <br>
+          const timeEl = document.querySelector("#time"); <br>
+          const board = document.querySelector("#board"); <br>
+          const colors = [
+          "white",
+          "green",
+          "yellow",
+          "red",
+          "blue",
+          "blueviolet",
+          "yellowgreen",
+          "brown",
+          ]; <br>
+          const userScore = document.querySelector("#userScore"); <br>
+          <br>
+          let time = 0; <br>
+          let score = 0; <br>
+          <br>
+          startBtn.addEventListener("click", (event) =&#62 { <br>
+          event.preventDefault(); <br>
+          screens[0].classList.add("up"); <br>
+          }); <br>
+          <br>
+          timeList.addEventListener("click", (event) =&#62 { <br>
+          if (event.target.classList.contains("time-btn")) { <br>
+          time = parseInt(event.target.getAttribute("data-time")); <br>
+          screens[1].classList.add("up"); <br>
+          startGame(); <br>
+          } <br>
+          }); <br>
+          <br>
+          board.addEventListener("click", (event) =&#62 { <br>
+          if (event.target.classList.contains("circle")) { <br>
+          score++; <br>
+          event.target.remove(); <br>
+          createRandomCircle(); <br>
+          setUserScore(); <br>
+          } else { <br>
+          finishGame(); <br>
+          } <br>
+          }); <br>
+          <br>
+          function startGame() { <br>
+          setInterval(decreaseTime, 1000); <br>
+          createRandomCircle(); <br>
+          setTime(time); <br>
+          } <br>
+          <br>
+          function decreaseTime() { <br>
+          if (time === 0) { <br>
+          finishGame(); <br>
+          } else { <br>
+          let curent = --time; <br>
+          if (curent &#60; 10) { <br>
+          curent = `0${curent}`; <br>
+          } <br>
+          setTime(curent); <br>
+          } <br>
+          } <br>
+          <br>
+          function setTime(value) { <br>
+          timeEl.innerHTML = `00:${value}`; <br>
+          } <br>
+          <br>
+          function finishGame() { <br>
+          timeEl.parentNode.classList.add("hide"); <br>
+          userScore.parentNode.classList.add("hide"); <br>
+          board.innerHTML = `&#60;h1&#62Cчет: &#60;span class="primary"&#62${score}&#60;/span&#62&#60;/h1&#62`; <br>
+          } <br>
+          <br>
+          function createRandomCircle() { <br>
+          const circle = document.createElement("div"); <br>
+          const size = getRandomNumber(20, 60); <br>
+          const { width, height } = board.getBoundingClientRect(); <br>
+          const x = getRandomNumber(0, width - size); <br>
+          const y = getRandomNumber(0, height - size); <br>
+          const color = getRandomColor(); <br>
+          <br>
+          circle.classList.add("circle"); <br>
+          circle.style.width = `${size}px`; <br>
+          circle.style.height = `${size}px`; <br>
+          circle.style.top = `${y}px`; <br>
+          circle.style.left = `${x}px`; <br>
+          circle.style.backgroundColor = color; <br>
+          circle.style.boxShadow = `0 0 3px ${color}, 0 0 5px ${color}`; <br>
+          board.style.boxShadow = `0 0 10px ${color}`; <br>
+          <br>
+          board.append(circle); <br>
+          } <br>
+          <br>
+          function getRandomNumber(min, max) { <br>
+          return Math.round(Math.random() * (max - min) + min); <br>
+          } <br>
+          <br>
+          function getRandomColor() { <br>
+          const index = Math.floor(Math.random() * colors.length); <br>
+          return colors[index]; <br>
+          } <br>
+          <br>
+          function setUserScore() { <br>
+          userScore.innerHTML = score; <br>
+          } <br>
+        </p>
+        <a href="./project_5/" class="homeListlink" target="_blank">Открыть проект</a>
       </div>
     </div>
   </div>

@@ -15,8 +15,18 @@
 }
 @font-face {
   font-family: "FiraSans-LightItalic";
-  font-weight: 400;
+  font-weight: 300;
   src: url(../../assets/fonts/Fira_Sans/FiraSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: "FiraSans-MediumItalic";
+  font-weight: 400;
+  src: url(../../assets/fonts/Fira_Sans/FiraSans-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "FiraSans-SemiBoldItalic";
+  font-weight: 600;
+  src: url(../../assets/fonts/Fira_Sans/FiraSans-SemiBoldItalic.ttf);
 }
 @font-face {
   font-family: "Inter";
@@ -150,16 +160,12 @@ h6 {
   height: auto;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  background-color: #ffffe0;
+  border: 1px solid #663300;
 }
 .homeListProject:last-child {
   margin-bottom: 0;
-}
-.homeListProject:nth-child(even) {
-  background-color: #fff;
-}
-.homeListProject:nth-child(odd) {
-  background-color: #ffffe0;
 }
 .homeListTitle {
   font-size: 24px;
@@ -167,12 +173,35 @@ h6 {
   font-weight: 500;
 }
 .homeListText {
-  font-family: "FiraSans-LightItalic";
+  font-family: "FiraSans-MediumItalic";
   padding: 5px 10px;
+  margin: 0 0 10px 0;
+}
+.homeListBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #663300;
+  color: #FFFFCC;
+  margin: 0 0 20px 0;
+  cursor: pointer;
 }
 .homeListCode {
-  padding: 10px 0;
-  margin-bottom: 10px;
+  width: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #663300;
+  border-radius: 10px;
+  background-color: #fff;
 }
 .homeListlink {
   display: -webkit-box;
@@ -184,7 +213,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 130px;
+  width: 180px;
   height: 50px;
   border-radius: 20px;
   background-color: #663300;
@@ -192,6 +221,7 @@ h6 {
 }
 
 .footer {
+  border-top: 1px solid #663300;
   width: 100%;
   height: 50px;
   position: fixed;

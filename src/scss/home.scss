@@ -22,15 +22,11 @@
     height: auto;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    background-color: #ffffe0;
+    border: 1px solid $darkBrown;
     &:last-child {
       margin-bottom: 0;
-    }
-    &:nth-child(EVEN) {
-      background-color: $white;
-    }
-    &:nth-child(ODD) {
-      background-color: #ffffe0;
     }
   }
   &Title {
@@ -39,18 +35,35 @@
     font-weight: 500;
   }
   &Text {
-    font-family: $font-italic;
+    font-family: $font-MediumItalic;
     padding: 5px 10px;
+    margin: 0 0 10px 0;
+  }
+  &Btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: $darkBrown;
+    color: $paleYellow;
+    margin: 0 0 20px 0;
+    cursor: pointer;
   }
   &Code {
-    padding: 10px 0;
-    margin-bottom: 10px;
+    width: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid $darkBrown;
+    border-radius: 10px;
+    background-color: $white;
   }
   &link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 130px;
+    width: 180px;
     height: 50px;
     border-radius: 20px;
     background-color: $darkBrown;
