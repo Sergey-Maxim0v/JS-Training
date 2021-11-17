@@ -139,7 +139,6 @@ h6 {
 }
 
 .homeList {
-  margin: 0 0 60px 0;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -164,9 +163,6 @@ h6 {
   margin-bottom: 40px;
   background-color: #ffffe0;
   border: 1px solid #663300;
-}
-.homeListProject:last-child {
-  margin-bottom: 0;
 }
 .homeListTitle {
   font-size: 24px;
@@ -245,6 +241,14 @@ h6 {
   border: 3px solid #FFFFCC;
 }
 
+.homeLine {
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background-color: #663300;
+  margin-bottom: 40px;
+}
+
 .homeAvards {
   width: 100%;
   display: -webkit-box;
@@ -263,6 +267,7 @@ h6 {
 .homeAvards5day {
   width: 300px;
   height: 300px;
+  border-radius: 20px;
   background-image: url(../../assets/images/img-home-5day.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -280,8 +285,8 @@ h6 {
   border: 3px solid #FFFFCC;
 }
 .homeAvardsCodewars {
-  width: 400px;
-  height: 40px;
+  width: 300px;
+  height: 30px;
   background-image: url(https://www.codewars.com/users/Sergey-Maxim0v/badges/large);
   background-position: center;
   background-repeat: no-repeat;
