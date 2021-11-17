@@ -30,14 +30,14 @@
           slides[activeSlide].classList.add('active') <br>
           <br>
           for (const slide of slides) { <br>
-          slide.addEventListener ('click', () => { <br>
+          slide.addEventListener ('click', () =&#62; { <br>
           clearActiveClasses() <br>
           slide.classList.add('active') <br>
           }) <br>
           } <br>
           <br>
           function clearActiveClasses () { <br>
-          slides.forEach((slide) => { <br>
+          slides.forEach((slide) =&#62; { <br>
           slide.classList.remove('active') <br>
           }) <br>
           } <br>
@@ -69,7 +69,7 @@
           <br>
           function dragstart(event){ <br>
           event.target.classList.add('hold') <br>
-          setTimeout(() => event.target.classList.add('hide'), 0) <br>
+          setTimeout(() =&#62; event.target.classList.add('hide'), 0) <br>
           } <br>
           <br>
           function dragend (event) { <br>
@@ -117,9 +117,9 @@
           const square = document.createElement('div') <br>
           square.classList.add('square') <br>
           <br>
-          square.addEventListener('mouseover', () => setColor(square)) <br>
+          square.addEventListener('mouseover', () =&#62; setColor(square)) <br>
           <br>
-          square.addEventListener('mouseleave', () => removeColor(square)) <br>
+          square.addEventListener('mouseleave', () =&#62; removeColor(square)) <br>
           <br>
           board.append(square) <br>
           } <br>
@@ -162,15 +162,15 @@
           <br>
           poetry.style.top = `-${(pictureCount - 1) * 100}vh` <br>
           <br>
-          upBtn.addEventListener('click', () => { <br>
+          upBtn.addEventListener('click', () =&#62; { <br>
           changePicture('up') <br>
           }) <br>
           <br>
-          downBtn.addEventListener('click', () => { <br>
+          downBtn.addEventListener('click', () =&#62; { <br>
           changePicture('down') <br>
           }) <br>
           <br>
-          document.addEventListener('keydown', event => { <br>
+          document.addEventListener('keydown', event =&#62; { <br>
           if (event.key === 'ArrowUp') { <br>
           changePicture('up') <br>
           } else if (event.key === 'ArrowDown') { <br>
