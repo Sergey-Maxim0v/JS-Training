@@ -139,6 +139,7 @@ h6 {
 }
 
 .homeList {
+  margin: 0 0 60px 0;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -194,6 +195,18 @@ h6 {
   color: #FFFFCC;
   margin: 0 0 20px 0;
   cursor: pointer;
+  -webkit-transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
+  transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
+  transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
+}
+.homeListBtn:hover {
+  -webkit-box-shadow: 0 0 20px #663300;
+          box-shadow: 0 0 20px #663300;
+  text-shadow: 0 0 5px #FFFFCC;
+}
+.homeListBtn:active {
+  border: 3px solid #FFFFCC;
 }
 .homeListCode {
   width: auto;
@@ -218,6 +231,73 @@ h6 {
   border-radius: 20px;
   background-color: #663300;
   color: #FFFFCC;
+  -webkit-transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
+  transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
+  transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
+}
+.homeListlink:hover {
+  -webkit-box-shadow: 0 0 20px #663300;
+          box-shadow: 0 0 20px #663300;
+  text-shadow: 0 0 5px #FFFFCC;
+}
+.homeListlink:active {
+  border: 3px solid #FFFFCC;
+}
+
+.homeAvards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.homeAvards a {
+  margin: 0 20px;
+}
+.homeAvards5day {
+  width: 300px;
+  height: 300px;
+  background-image: url(../../assets/images/img-home-5day.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border 0.1s;
+  transition: box-shadow 0.3s, border 0.1s, -webkit-box-shadow 0.3s;
+}
+.homeAvards5day:hover {
+  -webkit-box-shadow: 0 0 20px #663300;
+          box-shadow: 0 0 20px #663300;
+}
+.homeAvards5day:active {
+  border: 3px solid #FFFFCC;
+}
+.homeAvardsCodewars {
+  width: 400px;
+  height: 40px;
+  background-image: url(https://www.codewars.com/users/Sergey-Maxim0v/badges/large);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  -webkit-transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border 0.1s;
+  transition: box-shadow 0.3s, border 0.1s, -webkit-box-shadow 0.3s;
+}
+.homeAvardsCodewars:hover {
+  -webkit-box-shadow: 0 0 20px #663300;
+          box-shadow: 0 0 20px #663300;
+}
+.homeAvardsCodewars:active {
+  border: 3px solid #FFFFCC;
 }
 
 .footer {
@@ -258,6 +338,17 @@ h6 {
   background-position: center;
   background-size: 107%;
   background-repeat: no-repeat;
+  -webkit-transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border 0.1s;
+  transition: box-shadow 0.3s, border 0.1s, -webkit-box-shadow 0.3s;
+}
+.footerLinkGit:hover {
+  -webkit-box-shadow: 0 0 20px #663300;
+          box-shadow: 0 0 20px #663300;
+}
+.footerLinkGit:active {
+  border: 3px solid #FFFFCC;
 }
 .footerEmail {
   display: block;
@@ -269,6 +360,17 @@ h6 {
   background-position: 47% center;
   background-size: auto 120%;
   background-repeat: no-repeat;
+  -webkit-transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: border 0.1s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, border 0.1s;
+  transition: box-shadow 0.3s, border 0.1s, -webkit-box-shadow 0.3s;
+}
+.footerEmail:hover {
+  -webkit-box-shadow: 0 0 20px #663300;
+          box-shadow: 0 0 20px #663300;
+}
+.footerEmail:active {
+  border: 3px solid #FFFFCC;
 }
 
 body {

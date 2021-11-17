@@ -11,6 +11,7 @@
 }
 
 .homeList {
+  margin: 0 0 60px 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -50,6 +51,14 @@
     color: $paleYellow;
     margin: 0 0 20px 0;
     cursor: pointer;
+    transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
+    &:hover{
+      box-shadow:$shadow-hover__dark;
+      text-shadow: 0 0 5px $paleYellow;
+    }
+    &:active{
+      border: 3px solid $paleYellow;
+    }
   }
   &Code {
     width: auto;
@@ -68,5 +77,54 @@
     border-radius: 20px;
     background-color: $darkBrown;
     color: $paleYellow;
+    transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
+    &:hover{
+      box-shadow:$shadow-hover__dark;
+      text-shadow: 0 0 5px $paleYellow;
+
+    }
+    &:active{
+      border: 3px solid $paleYellow;
+    }
+  }
+}
+.homeAvards{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  & a{
+    margin: 0 20px;
+  }
+  &5day{
+    width: 300px;
+    height: 300px;
+    background-image: url(../../assets/images/img-home-5day.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: box-shadow 0.3s, border 0.1s;
+    &:hover{
+      box-shadow:$shadow-hover__dark;
+    }
+    &:active{
+      border: 3px solid $paleYellow;
+    }
+  }
+  &Codewars{
+    width: 400px;
+    height: 40px;
+    background-image: url(https://www.codewars.com/users/Sergey-Maxim0v/badges/large);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    transition: box-shadow 0.3s, border 0.1s;
+    &:hover{
+      box-shadow: $shadow-hover__dark;
+    }
+    &:active{
+      border: 3px solid $paleYellow;
+    }
   }
 }
