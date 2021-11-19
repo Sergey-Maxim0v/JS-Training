@@ -128,14 +128,14 @@ h6 {
 .homePage {
   padding: 7%;
   color: #663300;
-  background-color: #FFFFCC;
+  background-color: #ffffcc;
 }
 
 .homeTitle {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .homeList {
@@ -188,7 +188,7 @@ h6 {
   height: 50px;
   border-radius: 20px;
   background-color: #663300;
-  color: #FFFFCC;
+  color: #ffffcc;
   margin: 0 0 20px 0;
   cursor: pointer;
   -webkit-transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
@@ -199,18 +199,26 @@ h6 {
 .homeListBtn:hover {
   -webkit-box-shadow: 0 0 20px #663300;
           box-shadow: 0 0 20px #663300;
-  text-shadow: 0 0 5px #FFFFCC;
+  text-shadow: 0 0 5px #ffffcc;
 }
 .homeListBtn:active {
-  border: 3px solid #FFFFCC;
+  border: 3px solid #ffffcc;
 }
 .homeListCode {
   width: auto;
-  padding: 20px;
+  height: 0px;
+  padding: 0px;
   margin-bottom: 20px;
   border: 1px solid #663300;
   border-radius: 10px;
   background-color: #fff;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.homeListCodeActive {
+  height: auto;
+  padding: 20px;
 }
 .homeListlink {
   display: -webkit-box;
@@ -226,7 +234,7 @@ h6 {
   height: 50px;
   border-radius: 20px;
   background-color: #663300;
-  color: #FFFFCC;
+  color: #ffffcc;
   -webkit-transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
   transition: text-shadow 0.5s, border 0.1s, -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
@@ -235,10 +243,10 @@ h6 {
 .homeListlink:hover {
   -webkit-box-shadow: 0 0 20px #663300;
           box-shadow: 0 0 20px #663300;
-  text-shadow: 0 0 5px #FFFFCC;
+  text-shadow: 0 0 5px #ffffcc;
 }
 .homeListlink:active {
-  border: 3px solid #FFFFCC;
+  border: 3px solid #ffffcc;
 }
 
 .homeLine {
@@ -282,7 +290,7 @@ h6 {
           box-shadow: 0 0 20px #663300;
 }
 .homeAvards5day:active {
-  border: 3px solid #FFFFCC;
+  border: 3px solid #ffffcc;
 }
 .homeAvardsCodewars {
   width: 300px;
@@ -302,7 +310,7 @@ h6 {
           box-shadow: 0 0 20px #663300;
 }
 .homeAvardsCodewars:active {
-  border: 3px solid #FFFFCC;
+  border: 3px solid #ffffcc;
 }
 
 .footer {
@@ -323,7 +331,7 @@ h6 {
   padding: 0 7%;
 }
 .footerHome {
-  background-color: #FFFFCC;
+  background-color: #ffffcc;
   color: #663300;
 }
 .footerText {
@@ -353,7 +361,7 @@ h6 {
           box-shadow: 0 0 20px #663300;
 }
 .footerLinkGit:active {
-  border: 3px solid #FFFFCC;
+  border: 3px solid #ffffcc;
 }
 .footerEmail {
   display: block;
@@ -375,7 +383,7 @@ h6 {
           box-shadow: 0 0 20px #663300;
 }
 .footerEmail:active {
-  border: 3px solid #FFFFCC;
+  border: 3px solid #ffffcc;
 }
 
 body {

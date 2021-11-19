@@ -7,7 +7,7 @@
   font-size: $font-size__40;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .homeList {
@@ -36,7 +36,7 @@
     padding: 5px 10px;
     margin: 0 0 10px 0;
   }
-  &Btn{
+  &Btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,21 +48,28 @@
     margin: 0 0 20px 0;
     cursor: pointer;
     transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
-    &:hover{
-      box-shadow:$shadow-hover__dark;
+    &:hover {
+      box-shadow: $shadow-hover__dark;
       text-shadow: 0 0 5px $paleYellow;
     }
-    &:active{
+    &:active {
       border: 3px solid $paleYellow;
     }
   }
   &Code {
     width: auto;
-    padding: 20px;
+    height: 0px;
+    padding: 0px;
     margin-bottom: 20px;
     border: 1px solid $darkBrown;
     border-radius: 10px;
     background-color: $white;
+    overflow: hidden;
+    transition: height 0.5s;
+    &Active {
+      height: auto;
+      padding: 20px;
+    }
   }
   &link {
     display: flex;
@@ -74,32 +81,31 @@
     background-color: $darkBrown;
     color: $paleYellow;
     transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
-    &:hover{
-      box-shadow:$shadow-hover__dark;
+    &:hover {
+      box-shadow: $shadow-hover__dark;
       text-shadow: 0 0 5px $paleYellow;
-
     }
-    &:active{
+    &:active {
       border: 3px solid $paleYellow;
     }
   }
 }
-.homeLine{
+.homeLine {
   width: 100%;
   height: 1px;
   border-radius: 1px;
   background-color: $darkBrown;
   margin-bottom: 40px;
 }
-.homeAvards{
+.homeAvards {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  & a{
+  & a {
     margin: 0 20px;
   }
-  &5day{
+  &5day {
     width: 300px;
     height: 300px;
     border-radius: 20px;
@@ -108,14 +114,14 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: box-shadow 0.3s, border 0.1s;
-    &:hover{
-      box-shadow:$shadow-hover__dark;
+    &:hover {
+      box-shadow: $shadow-hover__dark;
     }
-    &:active{
+    &:active {
       border: 3px solid $paleYellow;
     }
   }
-  &Codewars{
+  &Codewars {
     width: 300px;
     height: 30px;
     background-image: url(https://www.codewars.com/users/Sergey-Maxim0v/badges/large);
@@ -124,10 +130,10 @@
     background-size: 100% 100%;
     border-radius: 10px;
     transition: box-shadow 0.3s, border 0.1s;
-    &:hover{
+    &:hover {
       box-shadow: $shadow-hover__dark;
     }
-    &:active{
+    &:active {
       border: 3px solid $paleYellow;
     }
   }
