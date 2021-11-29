@@ -36,26 +36,6 @@
     padding: 5px 10px;
     margin: 0 0 10px 0;
   }
-  &Btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: $darkBrown;
-    color: $paleYellow;
-    margin: 0 0 20px 0;
-    cursor: pointer;
-    transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
-    &:hover {
-      box-shadow: $shadow-hover__dark;
-      text-shadow: 0 0 5px $paleYellow;
-    }
-    &:active {
-      border: 3px solid $paleYellow;
-    }
-  }
   &Code {
     width: auto;
     height: 0px;
@@ -66,28 +46,6 @@
     background-color: $white;
     overflow: hidden;
     transition: height 0.5s;
-    &Active {
-      height: auto;
-      padding: 20px;
-    }
-  }
-  &link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: $darkBrown;
-    color: $paleYellow;
-    transition: box-shadow 0.3s, text-shadow 0.5s, border 0.1s;
-    &:hover {
-      box-shadow: $shadow-hover__dark;
-      text-shadow: 0 0 5px $paleYellow;
-    }
-    &:active {
-      border: 3px solid $paleYellow;
-    }
   }
 }
 .homeLine {
