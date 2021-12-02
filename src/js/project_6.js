@@ -74,18 +74,40 @@ const moveDown = buttonDown.addEventListener('click', () => VTurtle.move('down')
 const moveLeft = buttonLeft.addEventListener('click', () => VTurtle.move('left'))
 const moveRight = buttonRight.addEventListener('click', () => VTurtle.move('right'))
 
-//_____keyboard listener
-const KeyboardListner = document.addEventListener('keydown', (event)=> {
+//_____keyboard listeners
+
+//___keyboard listener Down
+const KeyboardListnerDown = document.addEventListener('keydown', (event)=> {
   if(event.code == 'ArrowUp') {
+    document.querySelector('.p6BtnUp').classList.add('p6BtnPush')
     VTurtle.move('up')
   }
   if(event.code == 'ArrowDown') {
+    document.querySelector('.p6BtnDown').classList.add('p6BtnPush')
     VTurtle.move('down')
   }
   if(event.code == 'ArrowLeft') {
+    document.querySelector('.p6BtnLeft').classList.add('p6BtnPush')
     VTurtle.move('left')
   }
   if(event.code == 'ArrowRight') {
+    document.querySelector('.p6BtnRight').classList.add('p6BtnPush')
     VTurtle.move('right')
+  }
+})
+
+//___keyboard listener Up
+const KeyboardListnerUp = document.addEventListener('keyup', (event)=> {
+  if(event.code == 'ArrowUp') {
+    document.querySelector('.p6BtnUp').classList.remove('p6BtnPush')
+  }
+  if(event.code == 'ArrowDown') {
+    document.querySelector('.p6BtnDown').classList.remove('p6BtnPush')
+  }
+  if(event.code == 'ArrowLeft') {
+    document.querySelector('.p6BtnLeft').classList.remove('p6BtnPush')
+  }
+  if(event.code == 'ArrowRight') {
+    document.querySelector('.p6BtnRight').classList.remove('p6BtnPush')
   }
 })
