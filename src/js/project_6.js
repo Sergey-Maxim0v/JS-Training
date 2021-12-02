@@ -74,3 +74,18 @@ const moveDown = buttonDown.addEventListener('click', () => VTurtle.move('down')
 const moveLeft = buttonLeft.addEventListener('click', () => VTurtle.move('left'))
 const moveRight = buttonRight.addEventListener('click', () => VTurtle.move('right'))
 
+//_____keyboard listener
+const KeyboardListner = document.addEventListener('keydown', (event)=> {
+  if(event.code == 'ArrowUp') {
+    VTurtle.move('up')
+  }
+  if(event.code == 'ArrowDown') {
+    VTurtle.move('down')
+  }
+  if(event.code == 'ArrowLeft') {
+    VTurtle.move('left')
+  }
+  if(event.code == 'ArrowRight') {
+    VTurtle.move('right')
+  }
+})

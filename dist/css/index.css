@@ -430,6 +430,12 @@ body {
           box-shadow: 0 0 10px #fff;
   color: #fff;
 }
+.p6BtnHover {
+  text-shadow: 0 0 10px #fff;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+  color: #fff;
+}
 
 .footer {
   border-top: 1px solid #663300;

@@ -1,4 +1,3 @@
-
 // click homeListBtn" - "homeListCode" : height: 'auto'; padding: '20px';
 
 // button code
@@ -23,8 +22,8 @@ function buttonHover() {
   }
 }
 
-function buttonClick(){
-  
+function buttonClick() {
+
 }
 
 // функция заполнения map из массива
