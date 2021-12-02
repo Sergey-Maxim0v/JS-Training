@@ -3,13 +3,6 @@
 @import "./mixins";
 @import "./cleancing";
 
-// Pages
-@import "home";
-
-// Blocks
-@import "header";
-@import "footer";
-
 // Common style
 body {
   font-family: $font-main;
@@ -36,3 +29,11 @@ body {
     font-size: $font-size__14;
   }
 }
+
+// Pages
+@import "home";
+@import "./project_6.scss";
+
+// Blocks
+@import "header";
+@import "footer";

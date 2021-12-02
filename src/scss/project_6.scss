@@ -1,0 +1,80 @@
+.pageProject6 div {
+  box-sizing: border-box;
+}
+.pageProject6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  color: #16d9e3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pageProject6 h1 {
+  color: rgba(22, 217, 227, 0.8);
+  position: relative;
+  right: 150px;
+  margin: 20px 0 40px 0;
+  font-size: 46px;
+  transition: all 0.3s;
+}
+.p6Field {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p6FieldRow {
+  display: flex;
+  justify-content: space-between;
+}
+.p6FieldElement {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #16d9e3;
+  background-color: #1d1d1d;
+  transition: all 0.3s;
+}
+.p6TurtleStyle {
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(255,255,255,1);
+}
+.p6Contein {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.p6Buttons {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &Row{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.p6Btn {
+  box-shadow: 0 0 10px #16d9e3;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  &:hover {
+    text-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #fff;
+  }  
+}
