@@ -1,39 +1,4 @@
-@import "./fonts";
-@import "./vars";
-@import "./mixins";
 @import "./cleancing";
 
-// Common style
-body {
-  font-family: $font-main;
-  font-size: $font-size__16;
-  font-weight: 400;
-}
-.button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 180px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: $darkBrown;
-  color: $paleYellow;
-  margin: 0 0 20px 0;
-  cursor: pointer;
-  transition: all 0.3s;
-  &:hover {
-    box-shadow: $shadow-hover__dark;
-    text-shadow: 0 0 5px $paleYellow;
-  }
-  &:active {
-    font-size: $font-size__14;
-  }
-}
-
 // Pages
-@import "home";
 @import "./project_6.scss";
-
-// Blocks
-@import "header";
-@import "footer";
