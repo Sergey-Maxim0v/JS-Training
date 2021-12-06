@@ -1,6 +1,6 @@
 import field from './field';
 import {Turtle} from './class';
-
+import './scss/index.scss';
 
 //_____Turtle which is displayed in the browser
 const VTurtle = new Turtle('VTurtle')
